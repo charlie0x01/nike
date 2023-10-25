@@ -1,7 +1,29 @@
-function App() {
-  return (
-    <h1 className='text-3xl font-bold underline grid place-items-center h-screen'>hello world!</h1>
-  )
-}
+// sections
+import {
+  CustomerReviews,
+  Footer,
+  Hero,
+  PopularProducts,
+  Services,
+  SpecialOffer,
+  Subscribe,
+  SuperQuality,
+} from "./sections";
 
-export default App
+const App = () => {
+  return (
+    <main className="relative">
+      Nav
+      <Hero />
+      <PopularProducts />
+      <SuperQuality />
+      <Services />
+      <SpecialOffer />
+      <CustomerReviews />
+      <Subscribe />
+      <Footer />
+    </main>
+  );
+};
+
+export default App;
